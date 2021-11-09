@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0px;
+}
+
+ul {
+ display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+button{
+  transition-duration: 0.4s;
+  background-color: #812929;
+  border-radius: 12px;
+}
+
+button a{
+  color: white;
+  text-decoration: none;
+}
+
+button:hover{
+  background-color: grey;
+  color: whitesmoke;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black; color: white}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.ham-dropdown{
+  background-color: gainsboro;
+}
+
+
+button{
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+body{
+  background-color:#812929;
+}
+
+nav{
+  background-color:gainsboro;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+
+.search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.search-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  width: 12px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.search:hover, .search:focus {
+  border: 1px solid #812929;
+  background-color: white;
+}
+
+.social-media-text{
+  color: white;
+  font-family: 'Rochester', cursive;
+  height: 50vh;
+  background-image: url("C-beans4.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;}
+
+.black-screen{
+  filter: brightness(50%);
+}
+
+.About-Us{
+  height: 20vh;
+  background-color: #C9B07F;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.About-Us-Text{
+  font-family: 'Rochester', cursive;
+  margin: 20px;
+}
+
+.Text-1{
+  font-family: 'Rochester', cursive;
+  font-size: 40px;
+  margin: 20px;
+}
+
+
+.Contact{
+ font-family: 'Roboto', sans-serif; 
+ display: flex;
+ justify-content: space-evenly;
+ display: flex;
+ flex-direction: column;
+ margin: 20px;
+}
+
+.bottom-half{
+  height: 980px ;
+  color: white;
+  font-family: 'Rochester', cursive;
+  display: flex;
+}
+
+.bottom-half-column {
+  width: 33.3333%;
+  height: 100%;
+}
+
+.specials{
+  background-image: url("B.JPEG");
+  /* filter: brightness(50%); */
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  padding: 70px;
+  font-size: 100%;
+  overflow: auto;
+}
+
+.special-text{
+  margin: 50px;
+}
+
+.special-text-2{
+  margin: 50px;
+}
+
+.special-text-3{
+  margin: 50px;
+}
+
+.special-text-4{
+  margin: 50px;
+}
+
+.special-text-5{
+  margin: 50px;
+}
+
+.Specials-header-5{
+  display: flex;
+  justify-content: center;
+}
+
+.photos{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* width: 100vh; */
+}
+
+.photo {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bear{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ham {
+  display: none;
+}
+
+.bottom{
+  background-color: gainsboro;
+  padding: 5px;
+}
+
+/* @media (max-width: 738px) {
+  .bottom-half {
+    display: flex;
+    flex-direction: column;
+  }
+  .coffee{
+    height: 46vh;
+    width: 60vh;
+  }
+
+  .bread{
+    width: 60;
+  }
+
+  .bear{
+    height: 100;
+    width: 60%;
+  }
+} */
+
+/* Ipad */
+@media (max-width: 768px) {
+  .About-Us{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+  }
+  .bottom-half{
+    height: 547px;
+  }
+
+  .specials{
+    padding: 4px;
+  }
+
+
+  .ham {
+    display: block;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+}
+
+
+
+/* Iphone 6/7/8 */
+@media (min-width: 375px) and (max-width: 667px) {
+
+  .ham {
+    display: block;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .Text-1{
+    font-size: 21px;
+  }
+
+  .photos{
+    display: none;
+  }
+
+  .specials{
+    padding: 33px;
+  }
+
+  .bottom-half-column {
+  width: 41.3333%;
+  }
+}
+
+
+
+
+/* Iphone 6/7/8 */
+@media (min-width: 414px) and (max-width: 736px) {
+
+  .ham {
+    display: block;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .Text-1{
+    font-size: 21px;
+  }
+
+  .photos{
+    display: none;
+  }
+
+  .specials{
+    padding: 33px;
+  }
+
+  .bottom-half-column {
+  width: 42.3333%;
+  }
+}
